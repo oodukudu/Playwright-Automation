@@ -9,6 +9,7 @@ test.describe('Contact Form', () => {
     await page.fill('#name', 'John Jake');
     await page.fill('#email', 'john.jake@example.com');
     await page.fill('#phone', '07300000000');
+    await page.fill('#subject', 'Test Subject');
     await page.fill('#description', 'This is a test message.');
     await page.click('#submitContact');
 });

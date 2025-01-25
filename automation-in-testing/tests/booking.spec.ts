@@ -10,11 +10,11 @@ test.describe('Booking Functionality', () => {
     await page.goto('/#/admin');
 
     await page.fill('#firstname', 'John');
-    await page.fill('#lastname', 'Doe');
-    await page.fill('#totalprice', '150');
+    await page.fill('#lastname', 'Donald');
+    await page.fill('#totalprice', '255');
     await page.check('#depositpaid');
-    await page.fill('#checkin', '2025-01-01');
-    await page.fill('#checkout', '2025-01-10');
+    await page.fill('#checkin', '2025-03-01');
+    await page.fill('#checkout', '2025-03-10');
     await page.click('button#submit');
 
     const confirmation = page.locator('text=Booking Confirmed');
